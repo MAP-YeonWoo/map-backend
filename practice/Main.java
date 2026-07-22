@@ -16,5 +16,18 @@ public class Main {
             System.out.println("개봉연도 : " + movie.getReleaseYear());
             System.out.println("--------------------");
         }
+        Store store = new Store(
+                1L,
+                "가게이름a",
+                "서울시 강남구"
+        );
+
+        Mission mission = new Mission(
+                1L,
+                "12,000원 이상 식사",
+                store
+        );
+
+        System.out.println(mission.getStore().getName());
     }
 }
